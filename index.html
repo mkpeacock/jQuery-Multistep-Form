@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title></title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.sectionnavigator.js"></script>
+	</head>
+	<body>
+		<h1>Multi-stage form navigation - jQuery Plugin</h1>
+		<ul id="master_navigator" style="float:right; width: 150px;"></ul>
+		<div id="master">
+			<div class="section">
+				<h2>Stage 1</h2>
+				<label>Stage 1 field 1</label>
+				<input type="text" /><br />
+				<label>Stage 1 field 2</label>
+				<input type="text" /><br />
+				<label>Stage 1 field 3</label>
+				<input type="text" /><br />
+				<label>Stage 1 field 4</label>
+				<input type="text" /><br />
+			</div>
+			<div class="section">
+				<h2>Stage 2</h2>
+				<label>Stage 2 field 1</label>
+				<input type="text" /><br />
+				<label>Stage 2 field 2</label>
+				<input type="text" /><br />
+			</div>
+			<div class="section">
+				<h2>Stage 3</h2>
+				<label>Final stage field</label>
+				<input type="text" /><br />
+				<input type="button" id="master_preview" value="Preview" />
+			</div>
+		</div>
+		<script type="text/javascript">
+		    $(document).ready(function(){
+			    $('#master').sectionnavigator();
+	        });
+	    </script>
+	</body>
+</html>
