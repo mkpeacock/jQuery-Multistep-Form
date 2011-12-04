@@ -20,7 +20,7 @@
 			if($('#' + masterReference + '_navigator').html() != ""){
 				$('#' + masterReference + '_navigator').append(' | ');
 			}	
-			$('#' + masterReference + '_navigator').append('<a stylehref="#" class="mnav_link" rel="sn_section_' + masterReference + '_' + index + '">' + index + '</a>');
+			$('#' + masterReference + '_navigator').append('<a stylehref="#" class="mnav_link" rel="sn_section_' + masterReference + '_' + index + '">' + (index+1) + '</a>');
 		});	
 		
 		
